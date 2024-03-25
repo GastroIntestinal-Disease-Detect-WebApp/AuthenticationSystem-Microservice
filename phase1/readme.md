@@ -1,0 +1,1 @@
+This phase deals with login functionality and checking if protected routes are secured.
