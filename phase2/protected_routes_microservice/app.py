@@ -13,9 +13,6 @@ def protected_route(payload_of_jwt_token: dict = Depends(get_payload_of_jwt_toke
     return {"message": "Valid Token"}
 
 
-if __name__ == "__main__":
-    uvicorn.run("app:app", reload=True, port=8002)
-
 @app.get("/logout")
 async def logout(authorization: str = Header(None)):
     
@@ -34,3 +31,8 @@ async def logout(authorization: str = Header(None)):
     response = await insert_logged_out_token_into_db(token)
     
     print(response)
+
+
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", reload=True, port=8002)

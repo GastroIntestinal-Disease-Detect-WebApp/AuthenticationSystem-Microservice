@@ -1,0 +1,8 @@
+password: Rohit@password#123
+
+hashed password is sent to server.
+
+{
+    "email":"rohit.singh@healinghorizons.com",
+    "password":"b912e277689453e2089958e108ddb7d1016e086004e86d05b24e38187cbeebfc"
+}
